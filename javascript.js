@@ -1,5 +1,12 @@
+//where we left off: 
+//you decided to scrap assigning a number to rock, paper and scissors strings
+//you now need to figure out how to ask the computer to generate 1 of 3 strings randomly:
+//"rock", "paper", or "scissors"
+
+//once you have done this, function playRound should execute in theory
+
+
 //write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors'
-//generate a random number between 1 and 3 
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random()*(3)+1);
     return computerChoice;
