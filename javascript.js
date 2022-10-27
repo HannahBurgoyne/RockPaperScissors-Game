@@ -1,8 +1,13 @@
+//assign 1 to rock 
+let rock = 1;
+//assign 2 to paper 
+let paper = 2;
+//assign 3 to scissors
+let scissors = 3;
+
+
 //write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors'
 //generate a random number between 1 and 3 
-//assign 1 to rock 
-//assign 2 to paper 
-//assign 3 to scissors
 
 
 
@@ -11,6 +16,6 @@
 //declare computerSelection and give it value of invoked getComputerChoice function 
 
 
-//scissors beats paper
-//paper beats rock
-//rock beats scissors
+//3 beats 2
+//2 beats 1
+//1 beats 3
