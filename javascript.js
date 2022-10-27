@@ -13,10 +13,13 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-
-//write function playRound which takes two parameters - playerSelection and computerSelection and returns loser/winner result
-//declare playerSelection
+//prompt player to submit their choice 
+let playerSelection = prompt("Rock, paper or scissors?");
 //declare computerSelection and give it value of invoked getComputerChoice function 
+let computerSelection = getComputerChoice();
+//write function playRound which takes two parameters - playerSelection and computerSelection and returns loser/winner result
+
+
 
 
 //3 beats 2
