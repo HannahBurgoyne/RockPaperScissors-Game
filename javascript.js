@@ -1,4 +1,8 @@
-
+//where you left off: 
+//can't work out where function game(); should go in relation to other code
+//try thinking about the overall order of the code 
+//see if you can get that for loop to work 
+//see you if you can get the results returned onscreen, and the prompt to come up again after each result
 
 //write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors' - passed test
 function getComputerChoice() {
