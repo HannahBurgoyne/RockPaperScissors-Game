@@ -1,6 +1,5 @@
 
 
-
 //write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors' - passed test
 function getComputerChoice() {
     let options = [
@@ -19,6 +18,10 @@ playerSelection = playerSelection.toLowerCase();
 
 //declare computerSelection and give it value of invoked getComputerChoice function 
 let computerSelection = getComputerChoice();
+
+
+function game() {
+    for (let i = 0; i < 5; i++) {
 
 //write function playRound which takes two parameters - playerSelection and computerSelection and returns loser/winner result
 function playRound(playerSelection, computerSelection) {
@@ -45,9 +48,8 @@ function playRound(playerSelection, computerSelection) {
 
 //function to keep game to 5 rounds 
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playRound(playerSelection, computerSelection);
+
+        
     }
 }
 
