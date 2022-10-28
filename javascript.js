@@ -1,9 +1,4 @@
-//where we left off: 
-//you decided to scrap assigning a number to rock, paper and scissors strings
-//you now need to figure out how to ask the computer to generate 1 of 3 strings randomly:
-//"rock", "paper", or "scissors"
 
-//once you have done this, function playRound should execute in theory
 
 
 //write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors' - passed test
@@ -24,6 +19,7 @@ playerSelection = playerSelection.toLowerCase();
 
 //declare computerSelection and give it value of invoked getComputerChoice function 
 let computerSelection = getComputerChoice();
+
 //write function playRound which takes two parameters - playerSelection and computerSelection and returns loser/winner result
 function playRound(playerSelection, computerSelection) {
 
@@ -44,5 +40,15 @@ function playRound(playerSelection, computerSelection) {
     //player did not enter a valid input
     } else alert("Try entering rock, paper or scissors again");
 
+    return playRound(playerSelection, computerSelection);
 }
 
+//function to keep game to 5 rounds 
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound(playerSelection, computerSelection);
+    }
+}
+
+console.log(game());
