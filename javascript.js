@@ -6,9 +6,14 @@
 //once you have done this, function playRound should execute in theory
 
 
-//write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors'
+//write function getComputerChoice which randomly returns 'rock', 'paper' or 'scissors' - passed test
 function getComputerChoice() {
-    let computerChoice = Math.floor(Math.random()*(3)+1);
+    let options = [
+        "rock",
+        "paper",
+        "scissors"
+    ]
+    let computerChoice = options[Math.floor(Math.random()*options.length)];
     return computerChoice;
 }
 
@@ -23,24 +28,21 @@ let computerSelection = getComputerChoice();
 function playRound(playerSelection, computerSelection) {
 
     //player winning conditionals
-    if (playerSelection = "rock" && computerSelection = "scissors") {
+    if (playerSelection == "rock" && computerSelection == "scissors") {
         alert("You win! Rock beats scissors");
-    } else if (playerSelection = "scissors" && computerSelection = "paper") {
+    } else if (playerSelection == "scissors" && computerSelection == "paper") {
         alert("You win! Scissors beat paper");
-    } else if (playerSelection = "paper" && computerSelection = "rock") {
+    } else if (playerSelection == "paper" && computerSelection == "rock") {
         alert("You win! Paper beats rock")
-        //player losing conditions
-    } else if (playerSelection = "scissors" && computerSelection = "rock") {
+        //player losing conditionals
+    } else if (playerSelection == "scissors" && computerSelection == "rock") {
         alert("You lose! Rock beats scissors");
-    } else if (playerSelection = "paper" && computerSelection = "scissors") {
+    } else if (playerSelection == "paper" && computerSelection == "scissors") {
         alert("You lose! Scissors beat paper");
-    } else if (playerSelection = "rock" && computerSelection = "paper") {
+    } else if (playerSelection == "rock" && computerSelection == "paper") {
         alert("You lose! Paper beats rock");
     //player did not enter a valid input
     } else alert("Try entering rock, paper or scissors again");
-    
-
-
 
 }
 
