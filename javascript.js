@@ -15,17 +15,6 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-//prompt player to submit their choice 
-let playerSelection = prompt("Rock, paper or scissors?");
-//convert playerSelection string to lower case string
-playerSelection = playerSelection.toLowerCase();
-
-//declare computerSelection and give it value of invoked getComputerChoice function 
-let computerSelection = getComputerChoice();
-
-
-function game() {
-    for (let i = 0; i < 5; i++) {
 
 //write function playRound which takes two parameters - playerSelection and computerSelection and returns loser/winner result
 function playRound(playerSelection, computerSelection) {
@@ -51,9 +40,16 @@ function playRound(playerSelection, computerSelection) {
 }
 
 //function to keep game to 5 rounds 
+function game() {
+    for (let i = 0; i < 5; i++) {
+    //prompt player to submit their choice 
+    let playerSelection = prompt("Rock, paper or scissors?");
+    //convert playerSelection string to lower case string
+    playerSelection = playerSelection.toLowerCase();
 
-
-        
+    //declare computerSelection and give it value of invoked getComputerChoice function 
+    let computerSelection = getComputerChoice();
+    playRound(playerSelection, computerSelection);
     }
 }
 
